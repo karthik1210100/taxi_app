@@ -2,10 +2,11 @@ import React from "react";
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
+import taxiIconUrl from '../../taxi-icon.png';
 
 
 const taxiIcon = L.icon({
-    iconUrl: 'src\taxi-icon.png',
+    iconUrl: taxiIconUrl,
     iconSize: [32, 32],
     iconAnchor: [16, 32]
 });
@@ -89,7 +90,7 @@ export function Service() {
                     <div className="col-md-6">
                         <div style={{ height: '80vh', borderRadius: '10px', overflow: 'hidden' }}>
                             <MapContainer
-                                center={[11.0168, 76.95583``]}
+                                center={[11.0168, 76.9558]}
                                 zoom={14}
                                 style={{ height: '100%', width: '100%' }}
                             >
